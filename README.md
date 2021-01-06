@@ -1,33 +1,24 @@
 CapacityTester
 ==============
 
-Have you bought a 128 GB USB flash drive (pen drive, usb stick) for $10/€10,
-with "free" shipping from Asia?
-If you ask something, you get a response in broken English from a Chinese guy
-who's calling himself "Jennifer"...
-Thinking about taxes and shipping fees, you're beginning to wonder how cheap
-this particular drive is compared to one in a local shop?
-Let's face it: You've probably bought a **fake flash drive**, i.e.,
-one that actually has much less capacity than it claims to have.
+¿Ha comprado una unidad flash USB de 128 GB (pen drive, usb stick) por 10 dólares? con el envío "gratuito" desde Asia?
+Si preguntas algo, obtienes una respuesta en un mal inglés de un chino que se llama a sí mismo "Jennifer"...
+Pensando en los impuestos y en los gastos de envío, empiezas a preguntarte ¿qué tan barata sera esta unidad en particular, si se compara con una de una tienda local?
+Afrontémoslo: Probablemente has comprado una **unidad flash falsa**, es decir, una que en realidad tiene mucha menos capacidad de la que dice tener.
 
-This tool can test a USB drive or memory card to find out if it's a fake.
-For example, a fake might be sold as "64 GB USB thumb drive"
-but it would only have a real capacity of 4 GB, everything beyond this limit
-will be lost. At that point, the fake flash drive is often rendered useless.
+Esta herramienta puede probar una unidad USB o tarjeta de memoria para averiguar si es falsa. Por ejemplo, una falsificación puede ser vendida como "unidad USB de 64 GB"
+pero sólo tendría una capacidad real de 4 GB, todo más allá de este límite
+se perderá. En ese punto, la unidad flash falsa a menudo se vuelve inútil.
 
-This tool performs a simple test to determine if the full capacity
-is usable or not. All it does is fill the volume with test data (files)
-and verify if the data on the volume is correct.
+Esta herramienta realiza una prueba simple para determinar si la capacidad total
+es utilizable o no. Todo lo que hace es llenar el volumen con datos de prueba (archivos)
+y luego los verifica para saber si los datos del volumen son correctos.
 
-The volume must be completely empty (no files on it)
-for the test to provide reliable results.
+El dispositivo debe estar completamente vacío (sin archivos) para que la prueba proporcione resultados fiables.
 
-Note that the test runs on top of an existing filesystem,
-which is sufficient to check a fake flash drive.
-You could also use it to test an old hard drive
-(delete all files or format it first), but that's not what it's supposed
-to be used for. For an old hdd, you might want to use *badblocks*
-or some other tool to test the drive itself.
+Tenga en cuenta que la prueba se ejecuta sobre un sistema de archivos existente,
+que es suficiente para comprobar una unidad flash falsa. También podra usarlo para probar un disco duro viejo (borre todos los archivos o formatee el disco primero), pero esto no es para lo que esta herramienta fue creada.
+Para un viejo hdd, seria mejor usar *badblocks* o alguna otra herramienta para probar la unidad en sí.
 
 ![CapacityTester GUI](screenshots/CapacityTester_GUI_1.png)
 
@@ -36,116 +27,114 @@ or some other tool to test the drive itself.
 ![CapacityTester CLI](screenshots/CapacityTester_CLI_1.png)
 
 
-
-Test
+Prueba
 ----
 
-Only mounted filesystems show up in the list,
-so you have to mount your USB drive before you can test it.
-You could use a file manager like Caja for that.
+Sólo los sistemas de archivos montados aparecen en la lista,
+así que tiene que montar la unidad USB antes de poder probarla.
+Puede usar un gestor de archivos como Caja para eso.
 
-Although the test is non-destructive (i.e., it won't touch existing files),
-you should make sure to remove any existing files from the drive.
+Aunque la prueba no es destructiva (es decir, no tocará los archivos existentes),
+deberías asegurarte de eliminar cualquier archivo existente de la unidad.
 
-During the initialization phase of the test,
-temporary test files are created.
-If the drive is defective and reports errors,
-the test should abort at this stage.
-After the initialization phase, a test pattern is written to the drive,
-which is then read back and verified.
-During the test, the drive will be completely filled up.
-If you have a fake drive, the test would fail when test data
-written beyond the real capacity limit is read back.
-The test should also fail if a genuine drive has become defective.
+Durante la fase de inicialización de la prueba,
+se crean archivos temporales de prueba.
+Si la unidad es defectuosa y reporta errores,
+la prueba debería abortar en esta etapa.
+Después de la fase de inicialización, se escribe un patrón de prueba en la unidad,
+que luego se lee y se verifica.
+Durante la prueba, la unidad estará completamente llena.
+Si tienes un disco falso, la prueba fallará cuando los datos de prueba
+escritos más allá del límite de capacidad real del dispositivo se empiezen a leer.
+La prueba también debería fallar si el sispositivo se ha vuelto defectuoso.
 
-After the test has finished, the temporary files are deleted automatically.
-However, if the drive is removed or dies during the test,
-the files will have to be deleted manually by the user.
+Después de que la prueba haya terminado, los archivos temporales se eliminan automáticamente.
+Sin embargo, si la unidad se desmonta o muere durante la prueba,
+los archivos tendrán que ser borrados por el usuario.
 
-The program does not detect and report the type of fake,
-it just reports an error and where the error has occurred.
-This may or may not provide an estimate on the real capacity of the drive,
-but no guarantees are made regarding the accuracy of the result.
+El programa no detecta ni informa del tipo de falsificación,
+sólo informa de un error y de dónde ha ocurrido el error.
+Esto puede o no proporcionar una estimación de la capacidad real de la unidad,
+pero no se dan garantías sobre la exactitud del resultado.
 
-A volume test works with files on top of the filesystem of the drive,
-so it does not know where each file ends up on the drive.
-It depends on the filesystem where each test file is written
-and how it may be fragmented.
-This means that the reported offset in case of an error is a file offset,
-not a physical offset and it might be much smaller than the real capacity
-of a fake drive.
+La prueba del dispositivo funciona con archivos sobre el sistema de archivos de la unidad,
+así que no sabe dónde termina cada archivo en el disco.
+Depende del sistema de archivos donde se escribe cada archivo de prueba
+y cómo puede estar fragmentado.
+Esto significa que el desplazamiento informado en caso de error es un desplazamiento de archivo, no una compensación física y podría ser mucho más pequeña que la capacidad real
+de una unidad falsa.
 
-Many complex filesystems do not allow the full capacity to be used
-as metadata and fragmentation can reduce the available capacity
-once files are written.
-For that reason, there is a buffer, which should be around 1 MB.
-Some filesystems such as FAT32 do not need that buffer (SAFETY_BUFFER = 0).
-
+Muchos sistemas de archivos complejos no permiten utilizar toda la capacidad
+ya que los metadatos y la fragmentación pueden reducir la capacidad disponible
+una vez que los archivos se escriben.
+Por esa razón, hay un búfer, que debería ser de alrededor de 1 MB.
+Algunos sistemas de archivos como FAT32 no necesitan ese buffer (SAFETY_BUFFER = 0).
 
 
-Build
+
+Construir
 -----
 
-This software requires Qt 5.
+Este software requiere Qt 5.
 
-Build using qmake:
+Construir usando qmake:
 
     $ qmake
     $ make
 
-Cleanup:
+Limpieza:
 
     $ make distclean
 
-Build without qmake (alternative):
-Make sure that the QTDIR environment variable points
-to your Qt build directory.
+Construir sin qmake (alternativa):
+Asegúrate de que la variable de entorno QTDIR apunta
+a tu directorio de construcción de Qt.
 
     $ export QTDIR=~/Builds/Qt/5.5.1-GCC5.3.1-FEDORA22
     $ cd build
     $ make
 
-Windows build:
+Construir en Windows:
 
     $ SET QTDIR=...
     $ cd build
     $ make PLATFORM=win32-g++
 
-32-bit build:
+compilar 32 bits :
 
     $ export QTDIR=... # 32-bit Qt build (-platform linux-g++-32)
     $ cd build
     $ make rebuild-32bit
 
-Cleanup:
+Limpieza:
 
     $ cd build
     $ make clean
 
 
 
-Call
+Llamado
 ----
 
-Use the libraries in your own Qt build directory if they're not installed.
-If you don't have the Qt 5 libraries installed but you have a custom Qt build:
+Usa las bibliotecas en tu propio directorio de construcción de Qt si no están instaladas.
+Si no tienes las bibliotecas Qt 5 instaladas pero tienes un build de Qt personalizado:
 
     $ LD_LIBRARY_PATH=~/Builds/Qt/5.5.1-GCC4.7.2-DEBIAN7/qtbase/lib \
       bin/CapacityTester
 
-Call with plugin directory explicitly set (e.g., if xcb plugin missing):
+Llama con el directorio de plugins explícitamente establecido (por ejemplo, si falta el plugin xcb):
 
     $ export QTDIR=~/Builds/Qt/5.5.1-GCC5.3.1-FEDORA22 \
       LD_LIBRARY_PATH=$QTDIR/qtbase/lib \
       QT_PLUGIN_PATH=$QTDIR/qtbase/plugins \
       bin/CapacityTester
 
-If the program still won't start because the xcb plugin can't be loaded,
-you're probably missing a library or two.
-Check the dependencies of $QTDIR/qtbase/plugins/platforms/libqxcb.so
-and install the missing libraries or add them manually.
+Si el programa aún no se inicia porque el plugin xcb no puede ser cargado,
+probablemente te falte una o dos bibliotecas.
+Revisa las dependencias de $QTDIR/qtbase/plugins/plataformas/libqxcb.so
+e instala las bibliotecas que faltan o añádelas manualmente.
 
-Command line mode (no gui):
+línea de comandos (no gui):
 
     $ export LD_LIBRARY_PATH=~/Builds/Qt/5.5.1-GCC4.7.2-DEBIAN7/qtbase/lib
     $ bin/CapacityTester -platform offscreen
@@ -153,17 +142,14 @@ Command line mode (no gui):
 
 
 
-Author
+Autor
 ------
 
 Philip Seeger (philip@c0xc.net)
 
 
 
-License
+Licencia
 -------
 
-Please see the file called LICENSE.
-
-
-
+Por favor, vea el archivo llamado LICENSE.
