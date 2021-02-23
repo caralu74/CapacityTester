@@ -1,376 +1,460 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es_ES">
-<context>
-    <name>CapacityTesterCli</name>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="46"/>
-        <source>Lists available volumes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="48"/>
-        <source>Shows volume information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="50"/>
-        <source>Starts volume test.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="52"/>
-        <source>Answers questions with yes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="54"/>
-        <source>Changes the size of the safety buffer zone.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="57"/>
-        <source>Volume to be tested.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="226"/>
-        <source>Capacity:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="231"/>
-        <source>Used:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="238"/>
-        <source>Available:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="252"/>
-        <source>%1 old test file(s) have been found.
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:trolltech="urn:trolltech:names:ts:document:1.0">
+  <file original="../src/capacitytestercli.cpp" datatype="cpp" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="CapacityTesterCli">
+      <trans-unit id="_msg1" approved="yes">
+        <source xml:space="preserve">Lists available volumes.</source>
+        <target xml:space="preserve">Listar los dispositivos disponibles.</target>
+        <context-group purpose="location"><context context-type="linenumber">46</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg2" approved="yes">
+        <source xml:space="preserve">Shows volume information.</source>
+        <target xml:space="preserve">Muestra información sobre el dispositivo.</target>
+        <context-group purpose="location"><context context-type="linenumber">48</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg3" approved="yes">
+        <source xml:space="preserve">Starts volume test.</source>
+        <target xml:space="preserve">Iniciar verificación del dispositivo.</target>
+        <context-group purpose="location"><context context-type="linenumber">50</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg4" approved="yes">
+        <source xml:space="preserve">Answers questions with yes.</source>
+        <target xml:space="preserve">Responde a las preguntas con un sí.</target>
+        <context-group purpose="location"><context context-type="linenumber">52</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg5" approved="yes">
+        <source xml:space="preserve">Changes the size of the safety buffer zone.</source>
+        <target xml:space="preserve">Cambiar el tamaño del bufer de seguridad.</target>
+        <context-group purpose="location"><context context-type="linenumber">54</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg6" approved="yes">
+        <source xml:space="preserve">Volume to be tested.</source>
+        <target xml:space="preserve">Dispositivo a probar.</target>
+        <context-group purpose="location"><context context-type="linenumber">57</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg7" approved="yes">
+        <source xml:space="preserve">Capacity:</source>
+        <target xml:space="preserve">Capacidad:</target>
+        <context-group purpose="location"><context context-type="linenumber">226</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg8" approved="yes">
+        <source xml:space="preserve">Used:</source>
+        <target xml:space="preserve">Usado:</target>
+        <context-group purpose="location"><context context-type="linenumber">231</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg9" approved="yes">
+        <source xml:space="preserve">Available:</source>
+        <target xml:space="preserve">Disponible:</target>
+        <context-group purpose="location"><context context-type="linenumber">238</context></context-group>
+      </trans-unit>
+      <group restype="x-gettext-plurals">
+        <context-group purpose="location"><context context-type="linenumber">253</context></context-group>
+        <trans-unit id="_msg10[0]" approved="yes">
+          <source xml:space="preserve">%n old test file(s) have been found.
 Cannot test with these files present, please delete them!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="268"/>
-        <source>%1 file(s) have been found.
+          <target xml:space="preserve">%1 archivo antiguos encontrado.
+No se puede realizar la verificación con este archivo presente, ¡Borrelo por favor!</target>
+        </trans-unit>
+        <trans-unit id="_msg10[1]" approved="yes">
+          <source xml:space="preserve">%n old test file(s) have been found.
+Cannot test with these files present, please delete them!</source>
+          <target xml:space="preserve">%n archivos antiguos encontrados.
+No se puede realizar la verificación con estos archivos presentes, ¡Borrelos por favor!</target>
+        </trans-unit>
+      </group>
+      <group restype="x-gettext-plurals">
+        <context-group purpose="location"><context context-type="linenumber">269</context></context-group>
+        <trans-unit id="_msg11[0]" approved="yes">
+          <source xml:space="preserve">%n file(s) have been found.
 The volume should be completely empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="298"/>
-        <source>The selected volume is full.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="307"/>
-        <source>The volume is not empty: %1 file(s) have been found.
+          <target xml:space="preserve">%1 archivo ha sido encontrado.
+El dispositivo debe estar completamente vacío.</target>
+        </trans-unit>
+        <trans-unit id="_msg11[1]" approved="yes">
+          <source xml:space="preserve">%n file(s) have been found.
+The volume should be completely empty.</source>
+          <target xml:space="preserve">%n archivos han sido encontrados.
+El dispositivo debe estar completamente vacío.</target>
+        </trans-unit>
+      </group>
+      <group restype="x-gettext-plurals">
+        <context-group purpose="location"><context context-type="linenumber">308</context></context-group>
+        <trans-unit id="_msg12[0]" approved="yes">
+          <source xml:space="preserve">The volume is not empty: %n file(s) have been found.
 You should delete all those files first.
 Are you really sure you want to continue?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="445"/>
-        <source>Test completed successfully, no errors found.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="454"/>
-        <source>The volume might be bad.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="455"/>
-        <source>An error has occurred.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="457"/>
-        <source>Error creating test file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="459"/>
-        <source>Permission denied.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="461"/>
-        <source>Resizing test file failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="463"/>
-        <source>Write failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="465"/>
-        <source>Verification failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestercli.cpp" line="466"/>
-        <source>Test failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>CapacityTesterGui</name>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="41"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="46"/>
-        <source>Mounted volume to be tested</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="51"/>
-        <source>&amp;Refresh</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="74"/>
-        <source>Capacity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="80"/>
-        <source>Used</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="86"/>
-        <source>Available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="138"/>
-        <source>Initializing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="140"/>
-        <source>Writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="142"/>
-        <source>Verifying</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="148"/>
-        <source>Write speed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="154"/>
-        <source>Read speed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="166"/>
-        <source>Time</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="172"/>
-        <source>Result</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="184"/>
-        <source>Start &amp;Test</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="188"/>
-        <source>&amp;Stop Test</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="192"/>
-        <source>&amp;Quit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="261"/>
-        <source>Abort test?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="262"/>
-        <source>Do you want to abort the running test?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="413"/>
-        <location filename="../src/capacitytestergui.cpp" line="511"/>
-        <source>Volume invalid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="414"/>
-        <source>The selected volume is not valid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="448"/>
-        <source>Old test files found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="449"/>
-        <source>%1 old test file(s) have been found! Cannot test with these files present, please delete them! The volume should be completely empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="468"/>
-        <location filename="../src/capacitytestergui.cpp" line="538"/>
-        <source>Volume not empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="469"/>
-        <source>%1 file(s) have been found. The volume should be completely empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="512"/>
-        <source>The selected volume is not valid anymore.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="526"/>
-        <source>Volume full</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="527"/>
-        <source>The selected volume is full.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="539"/>
-        <source>The volume is not empty: %1 file(s) have been found. You should cancel, delete all those files and try again. Are you really sure you want to continue?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="678"/>
-        <source>STARTING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="695"/>
-        <source>STOPPING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="711"/>
-        <source>TEST SUCCEEDED</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="714"/>
-        <source>TEST COMPLETED SUCCESSFULLY, NO ERRORS FOUND.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="730"/>
-        <source>Test succeeded</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="731"/>
-        <source>Test completed successfully, no errors found.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="741"/>
-        <source>TEST FAILED</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="762"/>
-        <source>The volume might be bad.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="763"/>
-        <source>An error has occurred.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="765"/>
-        <source>Error creating test file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="767"/>
-        <source>Permission denied.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="769"/>
-        <source>Resizing test file failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="771"/>
-        <source>Write failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="773"/>
-        <source>Verification failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="775"/>
-        <source>Test failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="776"/>
-        <source>Test failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="884"/>
-        <source>INITIALIZING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="903"/>
-        <source>WRITING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="913"/>
-        <source>VERIFYING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="926"/>
-        <source>ACCESS ERROR!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="940"/>
-        <source>WRITE ERROR AFTER %1 MB!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/capacitytestergui.cpp" line="954"/>
-        <source>READ ERROR AFTER %1 MB!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-</TS>
+          <target xml:space="preserve">El dispositivo no está vacío: se encontraron %1 archivo. Deberías abortar ahora y borrar este archivo antes de intentarlo de nuevo. ¿Está seguro de que quiere continuar ahora?</target>
+        </trans-unit>
+        <trans-unit id="_msg12[1]" approved="yes">
+          <source xml:space="preserve">The volume is not empty: %n file(s) have been found.
+You should delete all those files first.
+Are you really sure you want to continue?</source>
+          <target xml:space="preserve">El dispositivo no está vacío: se encontraron %n archivos. Deberías abortar ahora y borrar estos archivos antes de intentarlo de nuevo. ¿Está seguro de que quiere continuar ahora?</target>
+        </trans-unit>
+      </group>
+      <trans-unit id="_msg13" approved="yes">
+        <source xml:space="preserve">The selected volume is full.</source>
+        <target xml:space="preserve">El dispositivo seleccionado está lleno.</target>
+        <context-group purpose="location"><context context-type="linenumber">298</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg14" approved="yes">
+        <source xml:space="preserve">Test completed successfully, no errors found.</source>
+        <target xml:space="preserve">La verificación se completó satisfactoriamente, no se encontraron errores.</target>
+        <context-group purpose="location"><context context-type="linenumber">445</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg15" approved="yes">
+        <source xml:space="preserve">The volume might be bad.</source>
+        <target xml:space="preserve">El dispositivo puede ser defectuoso.</target>
+        <context-group purpose="location"><context context-type="linenumber">454</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg16" approved="yes">
+        <source xml:space="preserve">An error has occurred.</source>
+        <target xml:space="preserve">Ha ocurrido un error.</target>
+        <context-group purpose="location"><context context-type="linenumber">455</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg17" approved="yes">
+        <source xml:space="preserve">Error creating test file.</source>
+        <target xml:space="preserve">Error al crear el archivo de verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">457</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg18" approved="yes">
+        <source xml:space="preserve">Permission denied.</source>
+        <target xml:space="preserve">Permiso denegado.</target>
+        <context-group purpose="location"><context context-type="linenumber">459</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg19" approved="yes">
+        <source xml:space="preserve">Resizing test file failed.</source>
+        <target xml:space="preserve">Fallo el redimensionado del archivo de verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">461</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg20" approved="yes">
+        <source xml:space="preserve">Write failed.</source>
+        <target xml:space="preserve">Fallo la operación de escritura.</target>
+        <context-group purpose="location"><context context-type="linenumber">463</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg21" approved="yes">
+        <source xml:space="preserve">Verification failed.</source>
+        <target xml:space="preserve">Fallo la verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">465</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg22" approved="yes">
+        <source xml:space="preserve">Test failed.</source>
+        <target xml:space="preserve">Fallo la verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">466</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="" datatype="plaintext" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="CapacityTesterCli">
+      <trans-unit id="_msg23" translate="no" approved="yes">
+        <source xml:space="preserve">%1 old test file(s) have been found.
+Cannot test with these files present, please delete them!</source>
+        <target xml:space="preserve">%1 archivo(s) antiguos encontrados.
+No se puede realizar la verificación con estos archivos presentes, ¡Borrelos por favor!</target>
+      </trans-unit>
+      <trans-unit id="_msg24" translate="no" approved="yes">
+        <source xml:space="preserve">%1 file(s) have been found.
+The volume should be completely empty.</source>
+        <target xml:space="preserve">%1 archivo(s) han sido encontrados.
+El dispositivo debe estar completamente vacío.</target>
+      </trans-unit>
+      <trans-unit id="_msg25" translate="no" approved="yes">
+        <source xml:space="preserve">The volume is not empty: %1 file(s) have been found.
+You should delete all those files first.
+Are you really sure you want to continue?</source>
+        <target xml:space="preserve">El dispositivo no está vacío: %1 archivo(s) han sido encontrados.
+¿Está completamente seguro que desea continuar?</target>
+      </trans-unit>
+    </group>
+    <group restype="x-trolltech-linguist-context" resname="CapacityTesterGui">
+      <trans-unit id="_msg26" translate="no" approved="yes">
+        <source xml:space="preserve">%1 old test file(s) have been found! Cannot test with these files present, please delete them! The volume should be completely empty.</source>
+        <target xml:space="preserve">%1 ¡Archivo(s) de veriicación se ha encontrado! No se puede verificar con estos archivos presentes, ¡Bórrelos por favor! El dispositivo debe estar completamente vacío.</target>
+      </trans-unit>
+      <trans-unit id="_msg27" translate="no" approved="yes">
+        <source xml:space="preserve">%1 file(s) have been found. The volume should be completely empty.</source>
+        <target xml:space="preserve">%1 Archivo(s) se han encontrado. El dispositivo debe estar completamente vacío.</target>
+      </trans-unit>
+      <trans-unit id="_msg28" translate="no" approved="yes">
+        <source xml:space="preserve">The volume is not empty: %1 file(s) have been found. You should cancel, delete all those files and try again. Are you really sure you want to continue?</source>
+        <target xml:space="preserve">El dispositivo no está vacío: se encontraron %1 archivo(s). Deberías abortar ahora y borrar estos archivos antes de intentarlo de nuevo. ¿Está seguro de que quiere continuar ahora?</target>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="../src/capacitytestergui.cpp" datatype="cpp" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="CapacityTesterGui">
+      <trans-unit id="_msg29" approved="yes">
+        <source xml:space="preserve">Volume</source>
+        <target xml:space="preserve">Dispositivo</target>
+        <context-group purpose="location"><context context-type="linenumber">41</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg30" approved="yes">
+        <source xml:space="preserve">Mounted volume to be tested</source>
+        <target xml:space="preserve">Dispositivo montado para ser probado</target>
+        <context-group purpose="location"><context context-type="linenumber">46</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg31" approved="yes">
+        <source xml:space="preserve">&amp;Refresh</source>
+        <target xml:space="preserve">&amp;Actualizar</target>
+        <context-group purpose="location"><context context-type="linenumber">51</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg32" approved="yes">
+        <source xml:space="preserve">Capacity</source>
+        <target xml:space="preserve">Capacidad</target>
+        <context-group purpose="location"><context context-type="linenumber">74</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg33" approved="yes">
+        <source xml:space="preserve">Used</source>
+        <target xml:space="preserve">Usado</target>
+        <context-group purpose="location"><context context-type="linenumber">80</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg34" approved="yes">
+        <source xml:space="preserve">Available</source>
+        <target xml:space="preserve">Disponible</target>
+        <context-group purpose="location"><context context-type="linenumber">86</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg35" approved="yes">
+        <source xml:space="preserve">Initializing</source>
+        <target xml:space="preserve">Iniciando</target>
+        <context-group purpose="location"><context context-type="linenumber">138</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg36" approved="yes">
+        <source xml:space="preserve">Writing</source>
+        <target xml:space="preserve">Escribiendo</target>
+        <context-group purpose="location"><context context-type="linenumber">140</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg37" approved="yes">
+        <source xml:space="preserve">Verifying</source>
+        <target xml:space="preserve">Verificando</target>
+        <context-group purpose="location"><context context-type="linenumber">142</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg38" approved="yes">
+        <source xml:space="preserve">Write speed</source>
+        <target xml:space="preserve">Velocidad de escritura</target>
+        <context-group purpose="location"><context context-type="linenumber">148</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg39" approved="yes">
+        <source xml:space="preserve">Read speed</source>
+        <target xml:space="preserve">Velocidad de lectura</target>
+        <context-group purpose="location"><context context-type="linenumber">154</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg40" approved="yes">
+        <source xml:space="preserve">Time</source>
+        <target xml:space="preserve">Tiempo</target>
+        <context-group purpose="location"><context context-type="linenumber">166</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg41" approved="yes">
+        <source xml:space="preserve">Result</source>
+        <target xml:space="preserve">Resultado</target>
+        <context-group purpose="location"><context context-type="linenumber">172</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg42" approved="yes">
+        <source xml:space="preserve">Start &amp;Test</source>
+        <target xml:space="preserve">Iniciar &amp;verificación</target>
+        <context-group purpose="location"><context context-type="linenumber">184</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg43" approved="yes">
+        <source xml:space="preserve">&amp;Stop Test</source>
+        <target xml:space="preserve">&amp;detener la verificación</target>
+        <context-group purpose="location"><context context-type="linenumber">188</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg44" approved="yes">
+        <source xml:space="preserve">&amp;Quit</source>
+        <target xml:space="preserve">&amp;Salir</target>
+        <context-group purpose="location"><context context-type="linenumber">192</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg45" approved="yes">
+        <source xml:space="preserve">Abort test?</source>
+        <target xml:space="preserve">¿Abortar la verificación?</target>
+        <context-group purpose="location"><context context-type="linenumber">261</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg46" approved="yes">
+        <source xml:space="preserve">Do you want to abort the running test?</source>
+        <target xml:space="preserve">¿Quiere abortar la verificación en ejecución?</target>
+        <context-group purpose="location"><context context-type="linenumber">262</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg47" approved="yes">
+        <source xml:space="preserve">Volume invalid</source>
+        <target xml:space="preserve">Dispositivo inválido</target>
+        <context-group purpose="location"><context context-type="linenumber">413</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">513</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg48" approved="yes">
+        <source xml:space="preserve">The selected volume is not valid.</source>
+        <target xml:space="preserve">El dispositivo (o punto de montaje) seleccionado no es valido.</target>
+        <context-group purpose="location"><context context-type="linenumber">414</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg49" approved="yes">
+        <source xml:space="preserve">Old test files found</source>
+        <target xml:space="preserve">Se han encontrado archivos de verificación antiguos</target>
+        <context-group purpose="location"><context context-type="linenumber">448</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg50" approved="yes">
+        <source xml:space="preserve">Volume not empty</source>
+        <target xml:space="preserve">El dispositivo no está vacío</target>
+        <context-group purpose="location"><context context-type="linenumber">469</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">540</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg51" approved="yes">
+        <source xml:space="preserve">The selected volume is not valid anymore.</source>
+        <target xml:space="preserve">El dispositivo seleccionado ya no es válido.</target>
+        <context-group purpose="location"><context context-type="linenumber">514</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg52" approved="yes">
+        <source xml:space="preserve">Volume full</source>
+        <target xml:space="preserve">Dispositivo lleno</target>
+        <context-group purpose="location"><context context-type="linenumber">528</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg53" approved="yes">
+        <source xml:space="preserve">The selected volume is full.</source>
+        <target xml:space="preserve">El dispositivo seleccionado está lleno.</target>
+        <context-group purpose="location"><context context-type="linenumber">529</context></context-group>
+      </trans-unit>
+      <group restype="x-gettext-plurals">
+        <context-group purpose="location"><context context-type="linenumber">450</context></context-group>
+        <trans-unit id="_msg54[0]" approved="yes">
+          <source xml:space="preserve">%n old test file(s) have been found! Cannot test with these files present, please delete them! The volume should be completely empty.</source>
+          <target xml:space="preserve">%1 ¡Archivo de veriicación se ha encontrado! No se puede verificar con este archivos presente, ¡Bórrelo por favor! El dispositivo debe estar completamente vacío.</target>
+        </trans-unit>
+        <trans-unit id="_msg54[1]" approved="yes">
+          <source xml:space="preserve">%n old test file(s) have been found! Cannot test with these files present, please delete them! The volume should be completely empty.</source>
+          <target xml:space="preserve">%n ¡Archivos de veriicación se ha encontrado! No se puede verificar con estos archivos presentes, ¡Bórrelos por favor! El dispositivo debe estar completamente vacío.</target>
+        </trans-unit>
+      </group>
+      <group restype="x-gettext-plurals">
+        <context-group purpose="location"><context context-type="linenumber">471</context></context-group>
+        <trans-unit id="_msg55[0]" approved="yes">
+          <source xml:space="preserve">%n file(s) have been found. The volume should be completely empty.</source>
+          <target xml:space="preserve">%1 archivo ha sido encontrado.
+El dispositivo debe estar completamente vacío.</target>
+        </trans-unit>
+        <trans-unit id="_msg55[1]" approved="yes">
+          <source xml:space="preserve">%n file(s) have been found. The volume should be completely empty.</source>
+          <target xml:space="preserve">%n archivos ha sido encontrado.
+El dispositivo debe estar completamente vacío.</target>
+        </trans-unit>
+      </group>
+      <group restype="x-gettext-plurals">
+        <context-group purpose="location"><context context-type="linenumber">542</context></context-group>
+        <trans-unit id="_msg56[0]" approved="yes">
+          <source xml:space="preserve">The volume is not empty: %n file(s) have been found. You should cancel, delete all those files and try again. Are you really sure you want to continue?</source>
+          <target xml:space="preserve">El dispositivo no está vacío: se encontraron %1 archivo. Deberías abortar ahora y borrar este archivo antes de intentarlo de nuevo. ¿Está seguro de que quiere continuar ahora?</target>
+        </trans-unit>
+        <trans-unit id="_msg56[1]" approved="yes">
+          <source xml:space="preserve">The volume is not empty: %n file(s) have been found. You should cancel, delete all those files and try again. Are you really sure you want to continue?</source>
+          <target xml:space="preserve">El dispositivo no está vacío: se encontraron %n archivos. Deberías abortar ahora y borrar estos archivos antes de intentarlo de nuevo. ¿Está seguro de que quiere continuar ahora?</target>
+        </trans-unit>
+      </group>
+      <trans-unit id="_msg57" approved="yes">
+        <source xml:space="preserve">STARTING</source>
+        <target xml:space="preserve">INICIANDO</target>
+        <context-group purpose="location"><context context-type="linenumber">681</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg58" approved="yes">
+        <source xml:space="preserve">STOPPING</source>
+        <target xml:space="preserve">PARANDO</target>
+        <context-group purpose="location"><context context-type="linenumber">698</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg59" approved="yes">
+        <source xml:space="preserve">TEST SUCCEEDED</source>
+        <target xml:space="preserve">VERIFICACIÓN EXITOSA</target>
+        <context-group purpose="location"><context context-type="linenumber">714</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg60" approved="yes">
+        <source xml:space="preserve">TEST COMPLETED SUCCESSFULLY, NO ERRORS FOUND.</source>
+        <target xml:space="preserve">VERIFICACIÓN COMPLETADA CON ÉXITO, NO SE ENCONTRARON ERRORES.</target>
+        <context-group purpose="location"><context context-type="linenumber">717</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg61" approved="yes">
+        <source xml:space="preserve">Test succeeded</source>
+        <target xml:space="preserve">Verificación exitosa</target>
+        <context-group purpose="location"><context context-type="linenumber">733</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg62" approved="yes">
+        <source xml:space="preserve">Test completed successfully, no errors found.</source>
+        <target xml:space="preserve">Verificación completada con exito, no se encontraron errores.</target>
+        <context-group purpose="location"><context context-type="linenumber">734</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg63" approved="yes">
+        <source xml:space="preserve">TEST FAILED</source>
+        <target xml:space="preserve">LA VERIFICACIÓN FALLO</target>
+        <context-group purpose="location"><context context-type="linenumber">744</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg64" approved="yes">
+        <source xml:space="preserve">The volume might be bad.</source>
+        <target xml:space="preserve">El dispositivo puede ser defectuoso.</target>
+        <context-group purpose="location"><context context-type="linenumber">765</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg65" approved="yes">
+        <source xml:space="preserve">An error has occurred.</source>
+        <target xml:space="preserve">Ha ocurrido un error.</target>
+        <context-group purpose="location"><context context-type="linenumber">766</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg66" approved="yes">
+        <source xml:space="preserve">Error creating test file.</source>
+        <target xml:space="preserve">Error al crear el archivo de verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">768</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg67" approved="yes">
+        <source xml:space="preserve">Permission denied.</source>
+        <target xml:space="preserve">Permiso denegado.</target>
+        <context-group purpose="location"><context context-type="linenumber">770</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg68" approved="yes">
+        <source xml:space="preserve">Resizing test file failed.</source>
+        <target xml:space="preserve">Fallo el redimensionado del archivo de verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">772</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg69" approved="yes">
+        <source xml:space="preserve">Write failed.</source>
+        <target xml:space="preserve">Fallo la operación de escritura.</target>
+        <context-group purpose="location"><context context-type="linenumber">774</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg70" approved="yes">
+        <source xml:space="preserve">Verification failed.</source>
+        <target xml:space="preserve">Fallo la verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">776</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg71" approved="yes">
+        <source xml:space="preserve">Test failed</source>
+        <target xml:space="preserve">Fallo la verificación</target>
+        <context-group purpose="location"><context context-type="linenumber">778</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg72" approved="yes">
+        <source xml:space="preserve">Test failed.</source>
+        <target xml:space="preserve">Fallo la verificación.</target>
+        <context-group purpose="location"><context context-type="linenumber">779</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg73" approved="yes">
+        <source xml:space="preserve">INITIALIZING</source>
+        <target xml:space="preserve">INICIANDO</target>
+        <context-group purpose="location"><context context-type="linenumber">887</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg74" approved="yes">
+        <source xml:space="preserve">WRITING</source>
+        <target xml:space="preserve">ESCRIBIENDO</target>
+        <context-group purpose="location"><context context-type="linenumber">906</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg75" approved="yes">
+        <source xml:space="preserve">VERIFYING</source>
+        <target xml:space="preserve">VERIFICANDO</target>
+        <context-group purpose="location"><context context-type="linenumber">916</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg76" approved="yes">
+        <source xml:space="preserve">ACCESS ERROR!</source>
+        <target xml:space="preserve">¡ERROR DE ACCESO!</target>
+        <context-group purpose="location"><context context-type="linenumber">929</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg77" approved="yes">
+        <source xml:space="preserve">WRITE ERROR AFTER %1 MB!</source>
+        <target xml:space="preserve">¡ERROR DE ESCRITURA DESPUES DE %1 MB!</target>
+        <context-group purpose="location"><context context-type="linenumber">943</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg78" approved="yes">
+        <source xml:space="preserve">READ ERROR AFTER %1 MB!</source>
+        <target xml:space="preserve">¡ERROR DE LECTURA DESPUES DE %1 MB!</target>
+        <context-group purpose="location"><context context-type="linenumber">957</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+</xliff>
